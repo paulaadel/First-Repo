@@ -1,0 +1,67 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.person
+{
+    position: relative;
+    border: solid 2px black;
+    overflow: hidden;
+}
+.person img
+{
+    width: 100%;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+.person .caption
+{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(42,63,85,0.7);
+     position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+ 
+.person .caption h2
+{
+    background-color: #2a3f55;
+    position: relative;
+    left:110%;
+    transition: all 1s;
+    transition-delay: 2s;
+}
+.person .caption p
+{
+    position: relative;
+    left:110%;
+        transition: all 1s;
+        transition-delay: 2.5s;
+
+
+}
+.person:hover .caption
+{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+.person:hover img
+{
+    
+    transform: scale(1.2,1.2);
+}
+.person:hover .caption h2
+{
+    left:0;
+    
+}
+.person:hover .caption p
+{
+    left:0;
+    
+}
